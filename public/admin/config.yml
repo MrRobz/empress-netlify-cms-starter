@@ -1,23 +1,26 @@
 backend:
   name: git-gateway
   branch: master
-media_folder: 'assets/uploads'
+media_folder: 'public/uploads'
 collections:
   - name: 'blog'
     label: 'Blog'
-    folder: '_posts/'
+    folder: 'content/'
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { name: "layout", label: "Layout", widget: "hidden", default: "post" }
-      - { name: "current", label: "Current", widget: "hidden", default: "current" }
-      - { name: "class", label: "Class", widget: "hidden", default: "post-template" }
-      - { name: "subclass", label: "Subclass", widget: "hidden", default: "post tag-ember-addon" }
-      - { name: "navigation", label: "Navigation", widget: "hidden", default: True }
       - { name: "title", label: "Title", widget: "string" }
-      - { name: "cover", label: "Cover", widget: "image" }
+      - { name: "image", label: "Image", widget: "image" }
+      - name: "imageMeta"
+        label: "ImageMeta"
+        widget: "object"
+        collapsed: true
+        fields: 
+          - {label: "attribution", name: "attribution", widget: "string"}
+          - {label: "attributionLink", name: "attributionLink", widget: "string"}
+      - { name: "featured", label: "Featured", widget: "boolean", default: true }
+      - { name: "authors", label: "Authors", widget: "string", default: ghost }
       - { name: "tags", label: "Tags", widget: "string" }
       - { name: "body", label: "Body", widget: "markdown" }
-      - { name: "author", label: "Author", widget: "string", default: robin }
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
