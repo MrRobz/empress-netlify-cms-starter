@@ -8,6 +8,5 @@ featured: true
 authors:
   - ghost
 tags:
-  - leaf1 leaf2
 ---
 Hello **world** 123
