@@ -15,13 +15,11 @@ collections:
         label: "ImageMeta"
         widget: "object"
         collapsed: true
-        required: false
         fields: 
-          - { label: "attribution", name: "attribution", widget: "string", default: '' }
-          - { label: "attributionLink", name: "attributionLink", widget: "string", default: '' }
+          - { label: "attribution", name: "attribution", widget: "string", default: '', required: false }
+          - { label: "attributionLink", name: "attributionLink", widget: "string", default: '', required: false }
       - { name: "featured", label: "Featured", widget: "boolean", default: true }
       - { name: "authors", label: "Authors", widget: "list", default: ["ghost"] }
-      - { name: "tags", label: "Tags", widget: "list", default: ["new"] }
+      - { name: "tags", label: "Tags", widget: "list", default: ["new"], required: false }
       - { name: "body", label: "Body", widget: "markdown" }
-    meta: # Meta data fields. Just like fields, but without any preview element
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "ddd MMM DD YYYY h:mm:ss a"}
