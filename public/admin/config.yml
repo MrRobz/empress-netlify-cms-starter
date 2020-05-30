@@ -15,9 +15,10 @@ collections:
         label: "ImageMeta"
         widget: "object"
         collapsed: true
+        required: false
         fields: 
-          - {label: "attribution", name: "attribution", widget: "string"}
-          - {label: "attributionLink", name: "attributionLink", widget: "string"}
+          - { label: "attribution", name: "attribution", widget: "string", default: '' }
+          - { label: "attributionLink", name: "attributionLink", widget: "string", default: '' }
       - { name: "featured", label: "Featured", widget: "boolean", default: true }
       - { name: "authors", label: "Authors", widget: "list", default: ["ghost"] }
       - { name: "tags", label: "Tags", widget: "list" }
