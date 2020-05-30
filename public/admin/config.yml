@@ -24,3 +24,29 @@ collections:
       - { name: "tags", label: "Tags", widget: "list", default: ["new"], required: false }
       - { name: "body", label: "Body", widget: "markdown" }
       - { label: "Publish Date", name: "date", widget: "datetime", format: "ddd MMM DD YYYY h:mm:ss a"}
+
+  - name: 'author'
+    label: 'Author'
+    folder: 'author/'
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "name", label: "Name", widget: "string" }
+      - { name: "id", label: "Id", widget: "string" }
+      - { name: "image", label: "Image", widget: "image" }
+      - { name: "cover", label: "Cover", widget: "string", required: false }
+      - { name: "website", label: "Website", widget: "string", required: false }
+      - { name: "twitter", label: "Twitter", widget: "string", required: false }
+      - { name: "facebook", label: "Facebook", widget: "string", required: false }
+      - { name: "location", label: "Location", widget: "string", required: false }
+      - { name: "body", label: "Body", widget: "markdown" }
+
+  - name: 'tag'
+    label: 'Tag'
+    folder: 'tag/'
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "name", label: "Name", widget: "string" }
+      - { name: "image", label: "Image", widget: "image", required: false }
+      - { name: "body", label: "Body", widget: "markdown", required: false }
