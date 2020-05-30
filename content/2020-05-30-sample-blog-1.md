@@ -7,6 +7,7 @@ imageMeta:
 featured: true
 authors:
   - ghost
-tags:
+tags: 
+    - new
 ---
 Hello **world** 123

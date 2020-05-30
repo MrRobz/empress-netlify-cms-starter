@@ -21,7 +21,7 @@ collections:
           - { label: "attributionLink", name: "attributionLink", widget: "string", default: '' }
       - { name: "featured", label: "Featured", widget: "boolean", default: true }
       - { name: "authors", label: "Authors", widget: "list", default: ["ghost"] }
-      - { name: "tags", label: "Tags", widget: "list" }
+      - { name: "tags", label: "Tags", widget: "list", default: ["new"] }
       - { name: "body", label: "Body", widget: "markdown" }
     meta: # Meta data fields. Just like fields, but without any preview element
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
