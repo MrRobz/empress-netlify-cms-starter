@@ -6,6 +6,9 @@ module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     fingerprint: {
       extensions: ['js', 'css', 'map']
+    },
+    'empress-blog-netlify-cms': {
+      modulePath: `${__dirname}/custom-netlify-scripts/test.js`
     }
   });
 

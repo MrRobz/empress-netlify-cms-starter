@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     {{content-for "head"}}
 
@@ -23,15 +21,4 @@
     {{content-for "body-footer"}}
   </body>
 
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
 </html>

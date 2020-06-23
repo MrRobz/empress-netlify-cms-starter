@@ -49,6 +49,7 @@
     "ember-template-lint": "^2.4.0",
     "empress-blog": "^1.8.1",
     "empress-blog-attila-template": "^1.1.0",
+    "empress-blog-netlify-cms": "0.0.2-beta.1",
     "eslint": "^6.8.0",
     "eslint-plugin-ember": "^7.10.1",
     "eslint-plugin-node": "^11.0.0",
